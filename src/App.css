@@ -119,7 +119,9 @@ form{
   }
   .main{
     margin-top: -85px !important;
-    
+    width: 90% !important;
+    margin-left: -10% !important;
+    margin-right: 10% !important;
   }
 }
 .notie{
