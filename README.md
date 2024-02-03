@@ -1,7 +1,7 @@
 # Live url
 https://todo-app-12a22.web.app/
 
-##About
+## About
 This project was created using react as frontend and firebase as backend.\
 You can add tasks , mark them as completed and even delete them, but you have to sign in before using it.
 ### `More`
