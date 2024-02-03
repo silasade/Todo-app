@@ -59,7 +59,7 @@ function Header() {
     useEffect(() => {
         gsap.to(".profile", {
         
-            x:  '-15%',
+            x:  '65%',
             duration: 1.2,
             ease: "power2.inOut",
         });
@@ -81,10 +81,10 @@ function Header() {
                 {!user && <Notice />}
                 
             </div>
-            <div style={{display:"flex", justifyContent:"space-between", paddingTop:"5%",paddingLeft:"4%", alignItems:"center"}}>
+            <div style={{display:"flex", justifyContent:"space-between", paddingTop:"5%",paddingRight:"15%", alignItems:"center", flexDirection:"row-reverse"}}>
             <Auth />
             {user &&
-                <div className="profile" style={{display:"flex", flexDirection:"row", justifyContent:"flex-end", alignContent:"center"}}>
+                <div className="profile" style={{display:"flex", flexDirection:"row", justifyContent:"flex-start", alignContent:"center"}}>
                     <h3 style={{ color: "white" }}>Welcome, {name} &nbsp;</h3>
         
                 </div>
