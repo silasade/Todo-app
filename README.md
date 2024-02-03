@@ -3,7 +3,7 @@ https://todo-app-12a22.web.app/
 
 ## About
 This project was created using react as frontend and firebase as backend.\
-You can add tasks , mark them as completed and even delete them, but you have to sign in before using it.
+You can add tasks , mark them as completed, filter them as you like and even delete them, but you have to sign in before using it.
 ### `More`
 for more about the project visit https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub?share=true
 
