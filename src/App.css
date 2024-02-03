@@ -30,7 +30,7 @@ h1{
 -webkit-box-shadow: 1px -2px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 1px -2px 5px 0px rgba(0,0,0,0.75);
 padding: 1% !important;
-
+border-radius: 0.5cm;
 }
 table{
   font-size: 16px !important;
@@ -52,16 +52,30 @@ width: 100% !important;
 form{
   width: 100% !important;
   margin-bottom: 5px !important;
+  display: flex;
+  flex-direction: row;
 }
 .task{
-  width: 100% !important;
+  width: 90% !important;
   margin-bottom: 2% !important;
+  border-top-left-radius: 0.5cm !important;
+  border-bottom-left-radius: 0.5cm !important;
 }
  .task{
   padding-left: 10% !important;
 }
+
+.butt{
+  display: flex;
+  align-items: center;
+  width: 10% !important;
+  height: 75PX !important;
+  border-top-right-radius: 0.5cm;
+  border-bottom-right-radius: 0.5cm;
+  
+}
 .main{
-  margin-top: -120px !important;
+  margin-top: -100px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +85,12 @@ form{
   margin-right: auto;
   position: absolute;
   left: 15% !important;
+}
+.left{
+  width: 100% !important;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
 }
 .notie{
   width: 100% !important;
@@ -106,12 +126,31 @@ form{
   flex-direction: row;
   justify-content: center;
 }
+.notie{
+  display: flex !important;
+  flex-direction: row;
+  flex: 100% !important;
+}
+.profi{
+  width: 10%;
+}
+@media(max-width: 1000px){
+  .butt{
+    font-size: 13px !important;
+    width: 30% !important;
+    text-align: center !important;
+  }
+  .task{
+    width: 70% !important;
+  }
+  
+}
 @media(max-width:800px){
   .profile h3,.dd{
     font-size: 15px !important;
   }
   
-  .table{
+  .table, .butt{
     font-size: 13px !important;
   }
   .filter{
@@ -124,8 +163,9 @@ form{
     margin-right: 10% !important;
   }
 }
+
 .notie{
-  width: 100% !important;
+ 
   font-size: 15px !important;
 }
 @media(max-width:626px){
@@ -144,7 +184,7 @@ form{
   }
   .notie{
     font-size: 13px !important;
-    width: 100% !important;
+    
   }
 }
 @media(max-width:500px){
@@ -154,9 +194,7 @@ form{
   .profile h3, .dd,.notie {
     font-size: 13px !important;
   }
-  .notie{
-    width: 120% !important;
-  }
+  
   .table{
     font-size: 10px !important;
   }
@@ -170,12 +208,12 @@ form{
 @media(max-width:400px){
   .notie{
     font-size: 10px !important;
-    width: 130% !important;
+   
   }
 }
 @media(max-width:360px){
   .notie{
     font-size: 9px !important;
-    width: 140% !important;
+   
   }
 }

@@ -77,16 +77,19 @@ function Header() {
 
     return (
         <div className="test" style={windowWidth <= 500 ? style_mobile : style_desktop}>
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", alignContent: "flex-end" ,marginRight:'100px'}}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", alignContent: "flex-end" ,marginRight:'100px', width:"100%"}}>
                 {!user && <Notice />}
-                <Auth />
+                
             </div>
+            <div style={{display:"flex", justifyContent:"space-between", paddingTop:"5%",paddingLeft:"4%"}}>
+            <Auth />
             {user &&
                 <div className="profile" style={{display:"flex", flexDirection:"row", justifyContent:"flex-end", alignContent:"center"}}>
                     <h3 style={{ color: "white" }}>Welcome, {name} &nbsp;</h3>
-                    {profilePic && <img className="profi" src={profilePic} alt="profile picture" />}
+        
                 </div>
             }
+            </div>
             <div className="header">
                 <div>
                     <h1>TODO</h1>

@@ -174,6 +174,7 @@ function Tasks() {
                         value={addtask}
                         onChange={(e) => setAddTask(e.target.value)}
                     />
+                    <input style={style} className="butt" type="submit" value="Add Task"/>
                 </form>
                 <table style={{ ...style, cursor: 'pointer' }}>
                     <tbody>
@@ -206,8 +207,16 @@ function Tasks() {
                         ))}
                     </tbody>
                 </table>
+                <div> 
+                    <h3></h3>
+                </div>
+                {taskCollection.filter((item) => item.Name).length===0 &&
+                    <div style={style} className="left">
+                        <p> Add tasks...</p>
+                    </div>
+                    }
                 <div className="filter" style={style}>
-                    <div>
+                <div style={style} >
                         <p>{taskCollection.filter((item) => !item.completed).length} items left</p>
                     </div>
                     <div style={{ display: "inline-flex", gap: '10px' }} >
