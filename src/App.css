@@ -12,7 +12,7 @@ h1{
   margin: 0 !important;
   padding: 0% !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 300px !important;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,6 @@ h1{
 -webkit-box-shadow: 1px -2px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 1px -2px 5px 0px rgba(0,0,0,0.75);
 padding: 1% !important;
-border-radius: 0.5cm;
 }
 table{
   font-size: 16px !important;
@@ -134,6 +133,21 @@ form{
 .profi{
   width: 10%;
 }
+form{
+  height: 48px !important;
+}
+.butt{
+  height: 48px !important;
+}
+.butt{
+  font-size: 13px !important;
+  width: 15% !important;
+  text-align: right !important;
+  justify-content: center;
+}
+.task{
+  width: 85% !important;
+}
 @media(max-width: 1000px){
   .butt{
     font-size: 13px !important;
@@ -156,8 +170,17 @@ form{
   .filter{
     font-size: 11px !important;
   }
+  .butt{
+    outline: 0 !important;
+    border: 0% !important;
+    height: 49px !important;
+  }
+  form{
+    height: 48px;
+    margin-bottom: 25px !important;
+  }
   .main{
-    margin-top: -85px !important;
+    margin-top: -95px !important;
     width: 90% !important;
     margin-left: -10% !important;
     margin-right: 10% !important;
@@ -205,10 +228,22 @@ form{
     height: 250px !important;
   }
 }
+.dd{
+  background-color: transparent !important;
+  color: white !important;
+  border: 0;
+  opacity: 55%;
+}
+.dd:hover{
+  opacity: 100%;
+}
 @media(max-width:400px){
   .notie{
     font-size: 10px !important;
    
+  }
+  .main{
+    margin-top: -90px !important;
   }
 }
 @media(max-width:360px){

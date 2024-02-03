@@ -81,7 +81,7 @@ function Header() {
                 {!user && <Notice />}
                 
             </div>
-            <div style={{display:"flex", justifyContent:"space-between", paddingTop:"5%",paddingLeft:"4%"}}>
+            <div style={{display:"flex", justifyContent:"space-between", paddingTop:"5%",paddingLeft:"4%", alignItems:"center"}}>
             <Auth />
             {user &&
                 <div className="profile" style={{display:"flex", flexDirection:"row", justifyContent:"flex-end", alignContent:"center"}}>

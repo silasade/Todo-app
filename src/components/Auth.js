@@ -27,8 +27,8 @@ function Auth() {
   
   return (
     <div style={{display:"flex", gap:'1px',}} >
-      <button className="dd" style={{...style,border:"0"}} onClick={signInWithGoogle}>Sign in</button>
-      <button className="dd" style={{...style,border:"0"}} onClick={signOutUser}>Log out</button>
+      <button className="dd"  onClick={signInWithGoogle}>Sign in</button>
+      <button className="dd"  onClick={signOutUser}>Log out</button>
     </div>
   );
 }
