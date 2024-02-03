@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { ThemessProvider } from './components/ThemeContext';
 import './App.css';
+import { WidthProvider } from './components/WidthContext';
+import Header from './components/Header';
+import Tasks from './components/Tasks';
+import Auth from './components/Auth';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ThemessProvider>
+      <WidthProvider>
+    <div>
+      
+    <Header/>
+    
+    <Tasks/>
     </div>
+    </WidthProvider>
+    
+    </ThemessProvider>  
   );
 }
 
